@@ -4,6 +4,7 @@ Internship Research Report
 Repository: Skillzeno-Internship-Tasks
 
 The main idea: Blockchain is more than cryptocurrency.   
+
 It is a way for multiple participants to maintain and verify a shared record using common rules instead of relying entirely on one central record-keeper.
 
 
@@ -12,7 +13,7 @@ It is a way for multiple participants to maintain and verify a shared record usi
 2. Learn about blocks, transactions, and distributed ledgers.
 3. Understand how blockchain networks work.
 4. Study real-world blockchain applications.
-
+   --
 
 
 1. Blockchain Fundamentals: A Shared Record, Not Magic
