@@ -154,7 +154,7 @@ A secure ledger cannot protect every weak point around it. A stolen key, comprom
 
 Blockchain is most interesting when it solves a real coordination problem. These examples show where it may help—and what still needs attention.   
 
-**Digital payments and assets** 
+**Digital payments and assets**    
 Public blockchains can record transfers of digital assets and tokens with histories that users can independently inspect. This can enable global transfers and programmable payments. The trade-offs include transaction fees, price volatility, custody and key-management risk, and legal or compliance requirements.   
 
 **Practical takeaway:** verify the network and destination address before sending funds. Similar-looking addresses or the wrong network can lead to costly mistakes, and transactions may not be reversible through ordinary support channels.  
@@ -171,7 +171,7 @@ A manufacturer, carrier, distributor, and retailer may share a ledger to record 
 
 **The catch:** a blockchain cannot independently verify that a physical product is genuine or that a sensor's reading is accurate. Reliable data entry, identity checks, audits, and responsibility for errors are still essential.
 
-**Digital identity and records coordination**   
+**Digital identity and records coordination**     
 Blockchain-related systems may support verification of credentials, public keys, or credential status across organizations. A thoughtful design can keep sensitive personal information off-chain and use the ledger only for limited references or proofs.   
 
 Putting personal data directly on a public, append-oriented ledger can create privacy and correction problems. Access controls and data-protection requirements must be considered from the beginning.   
@@ -193,7 +193,7 @@ The question to ask before using blockchain
 
 ---
 
-**Conclusion**
+**Conclusion**   
 Blockchain combines cryptography, shared records, validation rules, and ways for network participants to agree on updates. Blocks organize transactions, nodes verify activity, and consensus helps determine the accepted history. Its applications range from digital payments and smart contracts to supply-chain coordination and transaction analysis.
 
 The useful question is not simply “Can this be put on a blockchain?” It is “Would a shared, independently verifiable record solve a real problem better than a simpler alternative?” Understanding both the strengths and limitations of blockchain is what makes its use practical and responsible.
