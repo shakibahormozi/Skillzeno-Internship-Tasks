@@ -80,14 +80,22 @@ flowchart LR
     A --> B
     B --> C
 ```
-If someone changes data in an earlier block, its hash may change and the references in later blocks may no longer match. This does not mean every blockchain has identical security guarantees, but it helps explain why altering recorded history can be difficult.
-What does “distributed ledger” mean?
-A distributed ledger is a record that is maintained or coordinated across multiple participants. Instead of relying solely on one central copy, participants use the network's rules to verify updates and maintain a consistent history.
+
+If someone changes data in an earlier block, its hash may change and the references in later blocks may no longer match. This does not mean every blockchain has identical security guarantees, but it helps explain why altering recorded history can be difficult.   
+
+**What does “distributed ledger” mean?**   
+A distributed ledger is a record that is maintained or coordinated across multiple participants. Instead of relying solely on one central copy, participants use the network's rules to verify updates and maintain a consistent history.  
+
+---
+
 Two related ideas are useful to distinguish:
 - Transaction history: the record of accepted transactions over time.
 - Current state: the result of those transactions, such as current balances, asset ownership, or application data.
-A node's local data may vary depending on its role and configuration, so it is not safe to assume that every computer stores every historical detail forever.
-A transaction's journey
+  
+A node's local data may vary depending on its role and configuration, so it is not safe to assume that every computer stores every historical detail forever.  
+
+**A transaction's journey**   
+
 Consider someone sending a digital asset to another wallet:
 1. Create: the wallet prepares the transaction.
 2. Authorize: the wallet signs it using the required cryptographic key or authorization method.
@@ -97,8 +105,14 @@ Consider someone sending a digital asset to another wallet:
 6. Verify and agree: other nodes check the block and follow the network's consensus rules.
 7. Update the ledger: the accepted transaction changes the network's resulting state.
 8. Confirm or finalize: the network provides increasing or protocol-defined assurance that the transaction remains part of accepted history.
-The precise meaning of confirmation and finality varies across networks. A block explorer can help you check a transaction hash, status, block, addresses, amount, and fee where available. However, a block explorer displays blockchain data; it does not automatically prove the real-world identity or intention of the people behind an address.
-3. How Blockchain Networks Work
+
+---
+
+The precise meaning of confirmation and finality varies across networks. A block explorer can help you check a transaction hash, status, block, addresses, amount, and fee where available. However, a block explorer displays blockchain data; it does not automatically prove the real-world identity or intention of the people behind an address.   
+
+
+## 3. How Blockchain Networks Work
+
 Nodes communicate and verify
 A node is a computer running blockchain software. Nodes exchange transactions and blocks with other nodes, verify incoming information, and apply the rules of their network. This peer-to-peer communication helps participants maintain a consistent view of accepted history [5].
 Three terms are easy to confuse:
