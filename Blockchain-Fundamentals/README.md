@@ -1,21 +1,3 @@
----
-
-**🔗 1. Blockchain Fundamentals**
-
----
-
-**🧱 2. Blocks, Transactions & Distributed Ledgers**
-
----
-
-**⚙️ 3. How Blockchain Networks Work**
-
----
-
-**🌍 4. Real-World Blockchain Applications**
-
----
----
 # Blockchain, Explained: How It Works and Where It Matters
 
 Internship Research Report
