@@ -8,7 +8,7 @@ The main idea: Blockchain is more than cryptocurrency.
 It is a way for multiple participants to maintain and verify a shared record using common rules instead of relying entirely on one central record-keeper.
 
 
-# What this report covers
+## What this report covers
 1. Research the fundamentals of blockchain technology.
 2. Learn about blocks, transactions, and distributed ledgers.
 3. Understand how blockchain networks work.
@@ -17,7 +17,7 @@ It is a way for multiple participants to maintain and verify a shared record usi
    
 ---
 
-# 1. Blockchain Fundamentals: A Shared Record, Not Magic  
+## 1. Blockchain Fundamentals: A Shared Record, Not Magic  
 
 Imagine a product moving from a manufacturer to a delivery company, a distributor, and finally a store. Each organization keeps its own spreadsheet. If the shipment date or quantity differs between records, the organizations need to work out which version to trust.  
 
