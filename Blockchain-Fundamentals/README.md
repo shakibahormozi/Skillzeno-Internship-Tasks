@@ -15,8 +15,6 @@ It is a way for multiple participants to maintain and verify a shared record usi
 3. Understand how blockchain networks work.
 4. Study real-world blockchain applications.
 
-   
----
 
 ## 1.Blockchain Fundamentals: A Shared Record, Not Magic
 
@@ -56,7 +54,6 @@ A distributed ledger is the broader idea; blockchain is one way to implement it.
 
 Blockchain is not automatically better than a traditional database. If one trusted organization manages the information and there is no need for independent verification by several parties, a conventional database may be simpler and more efficient [1][4].
 
----
 
 ## 2. Blocks, Transactions, and Distributed Ledgers
 Transactions: requests to change something
