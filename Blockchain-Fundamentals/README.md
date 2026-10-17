@@ -18,7 +18,7 @@ It is a way for multiple participants to maintain and verify a shared record usi
    
 ---
 
-**1.Blockchain Fundamentals: A Shared Record, Not Magic**  
+## 1.Blockchain Fundamentals: A Shared Record, Not Magic
 
 Imagine a product moving from a manufacturer to a delivery company, a distributor, and finally a store. Each organization keeps its own spreadsheet. If the shipment date or quantity differs between records, the organizations need to work out which version to trust.  
 
@@ -58,7 +58,7 @@ Blockchain is not automatically better than a traditional database. If one trust
 
 ---
 
-2. Blocks, Transactions, and Distributed Ledgers
+## 2. Blocks, Transactions, and Distributed Ledgers
 Transactions: requests to change something
 A transaction is a request to transfer digital value, call an application, or make a change to the ledger's state. Depending on the network, it may include the sender's address, the destination, the amount or application data, fee information, and proof of authorization.
 Sent does not mean confirmed. A transaction can be broadcast to the network and still be waiting for inclusion. Nodes check whether it follows the protocol rules before accepting it. The exact fields and processing rules differ between blockchains, so details should be checked against the documentation for the network being studied [5].
