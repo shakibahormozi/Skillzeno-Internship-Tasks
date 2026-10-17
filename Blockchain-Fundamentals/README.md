@@ -28,14 +28,23 @@ A blockchain typically combines five building blocks:
 - Cryptographic hashes: digital fingerprints that help link blocks and detect changes.
 - Digital signatures: a way to verify that a transaction was authorized by the relevant key.
 - Validation rules: checks that determine whether transactions and blocks are acceptable.
-- Consensus or ordering: mechanisms that help the network agree on the accepted sequence of updates.
-A distributed ledger is the broader idea; blockchain is one way to implement it. Not every distributed ledger uses blocks linked in a chain, and storing copies of a normal database on multiple servers does not automatically make it a blockchain. What matters is how updates are authorized, verified, ordered, and governed [1][2].
-Principles worth remembering
-Shared control. Responsibility for maintaining or validating records may be distributed across multiple participants rather than held entirely by one operator. The level of decentralization varies from network to network.
-Tamper evidence. Each block commonly refers to an earlier block through a cryptographic hash. If earlier data changes, its hash changes too, making that change detectable. This helps protect the history, but it does not make a system magically impossible to change under every circumstance [3].
-Transparency and auditability. Public blockchain activity can often be inspected by anyone. However, seeing an address does not automatically tell you who controls it. Permissioned networks can restrict access to selected participants.
-Shared rules. A transaction is accepted because it satisfies the network's rules, not simply because one participant says it should be accepted.
-A practical limitation: blockchain can preserve data, but it cannot guarantee that the information entered in the first place is true. If someone records a false delivery status, the ledger may preserve that false report very reliably.
+- Consensus or ordering: mechanisms that help the network agree on the accepted sequence of updates.  
+  
+A distributed ledger is the broader idea; blockchain is one way to implement it. Not every distributed ledger uses blocks linked in a chain, and storing copies of a normal database on multiple servers does not automatically make it a blockchain. What matters is how updates are authorized, verified, ordered, and governed [1][2].  
+
+**Principles worth remembering**
+
+**Shared control.** Responsibility for maintaining or validating records may be distributed across multiple participants rather than held entirely by one operator. The level of decentralization varies from network to network.  
+
+**Tamper evidence.** Each block commonly refers to an earlier block through a cryptographic hash. If earlier data changes, its hash changes too, making that change detectable. This helps protect the history, but it does not make a system magically impossible to change under every circumstance [3].  
+
+**Transparency and auditability.** Public blockchain activity can often be inspected by anyone. However, seeing an address does not automatically tell you who controls it. Permissioned networks can restrict access to selected participants.  
+
+**Shared rules.** A transaction is accepted because it satisfies the network's rules, not simply because one participant says it should be accepted.  
+
+
+**A practical limitation:** blockchain can preserve data, but it cannot guarantee that the information entered in the first place is true. If someone records a false delivery status, the ledger may preserve that false report very reliably.
+
 
 ### Public vs. Permissioned Networks
 
@@ -46,6 +55,9 @@ A practical limitation: blockchain can preserve data, but it cannot guarantee th
 
 
 Blockchain is not automatically better than a traditional database. If one trusted organization manages the information and there is no need for independent verification by several parties, a conventional database may be simpler and more efficient [1][4].
+
+---
+
 2. Blocks, Transactions, and Distributed Ledgers
 Transactions: requests to change something
 A transaction is a request to transfer digital value, call an application, or make a change to the ledger's state. Depending on the network, it may include the sender's address, the destination, the amount or application data, fee information, and proof of authorization.
