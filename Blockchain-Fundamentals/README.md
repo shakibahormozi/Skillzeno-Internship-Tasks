@@ -12,6 +12,8 @@ What this report covers
 2. Learn about blocks, transactions, and distributed ledgers.
 3. Understand how blockchain networks work.
 4. Study real-world blockchain applications.
+   --
+   
 1. Blockchain Fundamentals: A Shared Record, Not Magic
 Imagine a product moving from a manufacturer to a delivery company, a distributor, and finally a store. Each organization keeps its own spreadsheet. If the shipment date or quantity differs between records, the organizations need to work out which version to trust.
 A blockchain offers a different approach: participants follow shared rules to record and verify updates in a common ledger. Copies of the ledger are maintained by participating computers, and cryptographic techniques help make unauthorized changes detectable. Instead of asking only “Whose database should we trust?”, participants can also ask “Does this update follow the network's rules?”
