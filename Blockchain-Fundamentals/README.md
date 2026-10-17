@@ -68,7 +68,8 @@ A block groups transactions together with metadata. It commonly contains a refer
 
 ---
 
-### How Blocks Are Linked
+### The following simplified diagram shows how blocks refer to their predecessors:
+
 
 ```mermaid
 flowchart LR
