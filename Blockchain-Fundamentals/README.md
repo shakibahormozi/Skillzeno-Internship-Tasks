@@ -1,3 +1,18 @@
+<div align="center">
+
+<img src="https://img.shields.io/badge/BLOCKCHAIN-RESEARCH-2563EB?style=for-the-badge" alt="Blockchain Research" />
+
+<img src="https://img.shields.io/badge/SKILLZENO-INTERNSHIP-7C3AED?style=for-the-badge" alt="Skillzeno Internship" />
+
+# Blockchain Technology
+
+**Fundamentals, Network Operation & Real-World Applications**
+
+A Research Project
+
+</div>
+
+---
 # Blockchain, Explained: How It Works and Where It Matters
 
 Internship Research Report
