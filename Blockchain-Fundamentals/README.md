@@ -25,6 +25,13 @@ Transparency and auditability. Public blockchain activity can often be inspected
 Shared rules. A transaction is accepted because it satisfies the network's rules, not simply because one participant says it should be accepted.
 A practical limitation: blockchain can preserve data, but it cannot guarantee that the information entered in the first place is true. If someone records a false delivery status, the ledger may preserve that false report very reliably.
 
+### Public vs. Permissioned Networks
+
+| Network Type | Who Can Participate? | Typical Use |
+|---|---|---|
+| **Public Network** | Generally open to anyone who follows the protocol. | Digital-asset transfers and open applications. Examples: Bitcoin and Ethereum. |
+| **Permissioned Network** | Access is controlled through membership and policies. | Business workflows between known organizations, such as supply-chain networks. |
+
 
 Blockchain is not automatically better than a traditional database. If one trusted organization manages the information and there is no need for independent verification by several parties, a conventional database may be simpler and more efficient [1][4].
 2. Blocks, Transactions, and Distributed Ledgers
@@ -34,13 +41,17 @@ Sent does not mean confirmed. A transaction can be broadcast to the network and 
 Blocks: batches of transactions
 A block groups transactions together with metadata. It commonly contains a reference to an earlier block, linking the history together through cryptographic hashes [3]. Some networks also use data structures such as Merkle trees to summarize transactions and support efficient proofs that a transaction appears in a block.
 
-Block 100                  Block 101                  Block 102
-+----------------+         +----------------+         +----------------+
-| Transactions   |         | Transactions   |         | Transactions   |
-| Hash: H100     | <------ | Parent: H100   | <------ | Parent: H101   |
-+----------------+         +----------------+         +----------------+
+### How Blocks Are Linked
 
+```mermaid
+flowchart LR
+    A["Block 100<br/>Transactions<br/>Hash: H100"]
+    B["Block 101<br/>Transactions<br/>Parent Hash: H100"]
+    C["Block 102<br/>Transactions<br/>Parent Hash: H101"]
 
+    A --> B
+    B --> C
+```
 If someone changes data in an earlier block, its hash may change and the references in later blocks may no longer match. This does not mean every blockchain has identical security guarantees, but it helps explain why altering recorded history can be difficult.
 What does “distributed ledger” mean?
 A distributed ledger is a record that is maintained or coordinated across multiple participants. Instead of relying solely on one central copy, participants use the network's rules to verify updates and maintain a consistent history.
