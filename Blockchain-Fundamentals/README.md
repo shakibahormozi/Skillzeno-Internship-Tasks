@@ -1,3 +1,29 @@
+# Blockchain Technology
+
+**Internship Research Report**
+
+---
+
+## 1. Blockchain Fundamentals
+
+Blockchain is a technology for maintaining a shared digital ledger.
+
+---
+
+### Key Principles
+
+- **Decentralization:** Control is distributed among participants.
+- **Transparency:** Transactions can be inspected, depending on the network.
+- **Security:** Cryptographic techniques help protect data integrity.
+
+---
+
+## Public vs. Permissioned Networks
+
+| Network Type | Who Can Participate? | Typical Use |
+|---|---|---|
+| **Public** | Generally open to participants | Digital asset transfers |
+| **Permissioned** | Access is controlled | Business networks |
 Blockchain, Explained: How It Works and Where It Matters
 Internship Research Report
 Repository: Skillzeno-Internship-Tasks
