@@ -58,7 +58,6 @@ Blockchain is not automatically better than a traditional database. If one trust
 ## 2. Blocks, Transactions, and Distributed Ledgers  
 
 **Transactions: requests to change something**  
-
 A transaction is a request to transfer digital value, call an application, or make a change to the ledger's state. Depending on the network, it may include the sender's address, the destination, the amount or application data, fee information, and proof of authorization.
 
 
@@ -66,6 +65,8 @@ A transaction is a request to transfer digital value, call an application, or ma
 
 **Blocks: batches of transactions**   
 A block groups transactions together with metadata. It commonly contains a reference to an earlier block, linking the history together through cryptographic hashes [3]. Some networks also use data structures such as Merkle trees to summarize transactions and support efficient proofs that a transaction appears in a block.
+
+---
 
 ### How Blocks Are Linked
 
