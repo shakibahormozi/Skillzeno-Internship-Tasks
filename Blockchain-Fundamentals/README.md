@@ -55,11 +55,16 @@ A distributed ledger is the broader idea; blockchain is one way to implement it.
 Blockchain is not automatically better than a traditional database. If one trusted organization manages the information and there is no need for independent verification by several parties, a conventional database may be simpler and more efficient [1][4].
 
 
-## 2. Blocks, Transactions, and Distributed Ledgers
-Transactions: requests to change something
+## 2. Blocks, Transactions, and Distributed Ledgers  
+
+**Transactions: requests to change something**  
+
 A transaction is a request to transfer digital value, call an application, or make a change to the ledger's state. Depending on the network, it may include the sender's address, the destination, the amount or application data, fee information, and proof of authorization.
-Sent does not mean confirmed. A transaction can be broadcast to the network and still be waiting for inclusion. Nodes check whether it follows the protocol rules before accepting it. The exact fields and processing rules differ between blockchains, so details should be checked against the documentation for the network being studied [5].
-Blocks: batches of transactions
+
+
+**Sent does not mean confirmed.** A transaction can be broadcast to the network and still be waiting for inclusion. Nodes check whether it follows the protocol rules before accepting it. The exact fields and processing rules differ between blockchains, so details should be checked against the documentation for the network being studied.  
+
+**Blocks: batches of transactions**   
 A block groups transactions together with metadata. It commonly contains a reference to an earlier block, linking the history together through cryptographic hashes [3]. Some networks also use data structures such as Merkle trees to summarize transactions and support efficient proofs that a transaction appears in a block.
 
 ### How Blocks Are Linked
