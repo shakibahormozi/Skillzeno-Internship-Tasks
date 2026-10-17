@@ -3,7 +3,7 @@
 Internship Research Report
 Repository: Skillzeno-Internship-Tasks
 The main idea: Blockchain is more than cryptocurrency. It is a way for multiple participants to maintain and verify a shared record using common rules instead of relying entirely on one central record-keeper.
---
+
 
 What this report covers
 1. Research the fundamentals of blockchain technology.
