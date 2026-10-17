@@ -1,17 +1,20 @@
-<div align="center">
+---
 
-<img src="https://img.shields.io/badge/BLOCKCHAIN-RESEARCH-2563EB?style=for-the-badge" alt="Blockchain Research" />
+**🔗 1. Blockchain Fundamentals**
 
-<img src="https://img.shields.io/badge/SKILLZENO-INTERNSHIP-7C3AED?style=for-the-badge" alt="Skillzeno Internship" />
+---
 
-# Blockchain Technology
+**🧱 2. Blocks, Transactions & Distributed Ledgers**
 
-**Fundamentals, Network Operation & Real-World Applications**
+---
 
-A Research Project
+**⚙️ 3. How Blockchain Networks Work**
 
-</div>
+---
 
+**🌍 4. Real-World Blockchain Applications**
+
+---
 ---
 # Blockchain, Explained: How It Works and Where It Matters
 
