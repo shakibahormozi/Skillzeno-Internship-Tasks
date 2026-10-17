@@ -106,39 +106,54 @@ Consider someone sending a digital asset to another wallet:
 7. Update the ledger: the accepted transaction changes the network's resulting state.
 8. Confirm or finalize: the network provides increasing or protocol-defined assurance that the transaction remains part of accepted history.
 
----
 
 The precise meaning of confirmation and finality varies across networks. A block explorer can help you check a transaction hash, status, block, addresses, amount, and fee where available. However, a block explorer displays blockchain data; it does not automatically prove the real-world identity or intention of the people behind an address.   
 
 
 ## 3. How Blockchain Networks Work
 
-Nodes communicate and verify
-A node is a computer running blockchain software. Nodes exchange transactions and blocks with other nodes, verify incoming information, and apply the rules of their network. This peer-to-peer communication helps participants maintain a consistent view of accepted history [5].
+**Nodes communicate and verify**   
+
+A node is a computer running blockchain software. Nodes exchange transactions and blocks with other nodes, verify incoming information, and apply the rules of their network. This peer-to-peer communication helps participants maintain a consistent view of accepted history.   
+
 Three terms are easy to confuse:
 - Validation: Does this transaction or block obey the network's rules?
 - Consensus: Which valid updates or chain history does the network accept?
 - Finality: What level of assurance does the protocol provide that accepted history will not be reverted?
-Consensus does not turn an invalid transaction into a valid one. Nodes still need to enforce protocol rules.
-How do networks agree?
-Different blockchains use different approaches. Two widely discussed mechanisms are:
-Proof of work (PoW). In Bitcoin, miners compete to produce a block that meets the protocol's difficulty requirement. Other nodes can verify the result. The design relies on cryptographic verification, the distribution of computational power, and the network's rules [6].
-Proof of stake (PoS). In Ethereum, validators put stake at risk and take part in proposing or checking blocks. Protocol rewards and penalties help encourage honest behavior. Ethereum moved from proof of work to proof of stake in 2022 [7].
-These examples illustrate that there is no single consensus mechanism used by every blockchain. Each design has different operating costs, security assumptions, and trade-offs.
-Public networks and business networks
-Public networks such as Bitcoin and Ethereum generally allow broad participation under their protocols. Permissioned networks, by contrast, restrict participation to approved members and can define who may submit transactions or access particular data.
-Hyperledger Fabric is one example of a permissioned framework designed for business networks. In a simplified Fabric workflow, a client proposes a transaction, required peers endorse the proposed operation, an ordering service establishes transaction order, and peers validate and commit the block. The exact rules depend on how the network is configured [4].
-This highlights an important point: blockchain is a family of designs, not one identical system. Public and permissioned networks can share ideas such as cryptographic linking and replicated ledgers while differing in identity, access, governance, ordering, and privacy.
-What makes a network trustworthy?
+
+Consensus does not turn an invalid transaction into a valid one. Nodes still need to enforce protocol rules.   
+ 
+**How do networks agree?**   
+Different blockchains use different approaches. Two widely discussed mechanisms are:   
+
+**Proof of work (PoW).** In Bitcoin, miners compete to produce a block that meets the protocol's difficulty requirement. Other nodes can verify the result. The design relies on cryptographic verification, the distribution of computational power, and the network's rules .   
+
+**Proof of stake (PoS).** In Ethereum, validators put stake at risk and take part in proposing or checking blocks. Protocol rewards and penalties help encourage honest behavior. Ethereum moved from proof of work to proof of stake in 2022 .   
+
+These examples illustrate that there is no single consensus mechanism used by every blockchain. Each design has different operating costs, security assumptions, and trade-offs.   
+
+**Public networks and business networks**   
+
+Public networks such as Bitcoin and Ethereum generally allow broad participation under their protocols. Permissioned networks, by contrast, restrict participation to approved members and can define who may submit transactions or access particular data.   
+
+Hyperledger Fabric is one example of a permissioned framework designed for business networks. In a simplified Fabric workflow, a client proposes a transaction, required peers endorse the proposed operation, an ordering service establishes transaction order, and peers validate and commit the block. The exact rules depend on how the network is configured .   
+
+**This highlights an important point:** blockchain is a family of designs, not one identical system. Public and permissioned networks can share ideas such as cryptographic linking and replicated ledgers while differing in identity, access, governance, ordering, and privacy.  
+
+**What makes a network trustworthy?**
+
 Trust does not come from the word “blockchain” alone. It depends on several factors working together:
 - Correct protocol rules and well-tested software.
 - Independent validation by network participants.
 - Secure private-key handling.
 - A consensus or ordering design appropriate to the network.
 - Clear governance and upgrade procedures.
-- Reliable information from external systems when real-world data is involved.
-A secure ledger cannot protect every weak point around it. A stolen key, compromised wallet, vulnerable smart contract, or dishonest external data source can still cause harm.
-4. Real-World Blockchain Applications
+- Reliable information from external systems when real-world data is involved.    
+  
+A secure ledger cannot protect every weak point around it. A stolen key, compromised wallet, vulnerable smart contract, or dishonest external data source can still cause harm.   
+
+## 4. Real-World Blockchain Applications  
+
 Blockchain is most interesting when it solves a real coordination problem. These examples show where it may help—and what still needs attention.
 Digital payments and assets
 Public blockchains can record transfers of digital assets and tokens with histories that users can independently inspect. This can enable global transfers and programmable payments. The trade-offs include transaction fees, price volatility, custody and key-management risk, and legal or compliance requirements.
