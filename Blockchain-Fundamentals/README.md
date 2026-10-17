@@ -133,7 +133,6 @@ Different blockchains use different approaches. Two widely discussed mechanisms 
 These examples illustrate that there is no single consensus mechanism used by every blockchain. Each design has different operating costs, security assumptions, and trade-offs.   
 
 **Public networks and business networks**   
-
 Public networks such as Bitcoin and Ethereum generally allow broad participation under their protocols. Permissioned networks, by contrast, restrict participation to approved members and can define who may submit transactions or access particular data.   
 
 Hyperledger Fabric is one example of a permissioned framework designed for business networks. In a simplified Fabric workflow, a client proposes a transaction, required peers endorse the proposed operation, an ordering service establishes transaction order, and peers validate and commit the block. The exact rules depend on how the network is configured .   
@@ -141,7 +140,6 @@ Hyperledger Fabric is one example of a permissioned framework designed for busin
 **This highlights an important point:** blockchain is a family of designs, not one identical system. Public and permissioned networks can share ideas such as cryptographic linking and replicated ledgers while differing in identity, access, governance, ordering, and privacy.  
 
 **What makes a network trustworthy?**
-
 Trust does not come from the word “blockchain” alone. It depends on several factors working together:
 - Correct protocol rules and well-tested software.
 - Independent validation by network participants.
@@ -154,33 +152,51 @@ A secure ledger cannot protect every weak point around it. A stolen key, comprom
 
 ## 4. Real-World Blockchain Applications  
 
-Blockchain is most interesting when it solves a real coordination problem. These examples show where it may help—and what still needs attention.
-Digital payments and assets
-Public blockchains can record transfers of digital assets and tokens with histories that users can independently inspect. This can enable global transfers and programmable payments. The trade-offs include transaction fees, price volatility, custody and key-management risk, and legal or compliance requirements.
-Practical takeaway: verify the network and destination address before sending funds. Similar-looking addresses or the wrong network can lead to costly mistakes, and transactions may not be reversible through ordinary support channels.
-Smart contracts and decentralized finance
-Smart contracts are programs that execute according to rules encoded on a blockchain. They can support decentralized exchanges, lending, collateral management, token issuance, and escrow-like workflows [8].
-For example, a lending application may accept a digital asset as collateral. If its programmed conditions are met, the contract may allow a loan or trigger liquidation when collateral falls below a defined threshold.
-The automation is useful, but it does not eliminate risk. Bugs, manipulated price feeds, poor access controls, insufficient liquidity, or governance failures may affect the outcome.
-Supply-chain traceability
-A manufacturer, carrier, distributor, and retailer may share a ledger to record dispatches, arrivals, inspections, and changes in custody. A common event history can reduce reconciliation work and help investigate a disputed delivery.
-The catch: a blockchain cannot independently verify that a physical product is genuine or that a sensor's reading is accurate. Reliable data entry, identity checks, audits, and responsibility for errors are still essential.
-Digital identity and records coordination
-Blockchain-related systems may support verification of credentials, public keys, or credential status across organizations. A thoughtful design can keep sensitive personal information off-chain and use the ledger only for limited references or proofs.
-Putting personal data directly on a public, append-oriented ledger can create privacy and correction problems. Access controls and data-protection requirements must be considered from the beginning.
-Blockchain analytics and financial investigations
+Blockchain is most interesting when it solves a real coordination problem. These examples show where it may help—and what still needs attention.   
+
+**Digital payments and assets** 
+Public blockchains can record transfers of digital assets and tokens with histories that users can independently inspect. This can enable global transfers and programmable payments. The trade-offs include transaction fees, price volatility, custody and key-management risk, and legal or compliance requirements.   
+
+**Practical takeaway:** verify the network and destination address before sending funds. Similar-looking addresses or the wrong network can lead to costly mistakes, and transactions may not be reversible through ordinary support channels.  
+
+**Smart contracts and decentralized finance**   
+Smart contracts are programs that execute according to rules encoded on a blockchain. They can support decentralized exchanges, lending, collateral management, token issuance, and escrow-like workflows.   
+
+For example, a lending application may accept a digital asset as collateral. If its programmed conditions are met, the contract may allow a loan or trigger liquidation when collateral falls below a defined threshold.   
+
+The automation is useful, but it does not eliminate risk. Bugs, manipulated price feeds, poor access controls, insufficient liquidity, or governance failures may affect the outcome.   
+
+**Supply-chain traceability**  
+A manufacturer, carrier, distributor, and retailer may share a ledger to record dispatches, arrivals, inspections, and changes in custody. A common event history can reduce reconciliation work and help investigate a disputed delivery.   
+
+**The catch:** a blockchain cannot independently verify that a physical product is genuine or that a sensor's reading is accurate. Reliable data entry, identity checks, audits, and responsibility for errors are still essential.
+
+**Digital identity and records coordination**   
+Blockchain-related systems may support verification of credentials, public keys, or credential status across organizations. A thoughtful design can keep sensitive personal information off-chain and use the ledger only for limited references or proofs.   
+
+Putting personal data directly on a public, append-oriented ledger can create privacy and correction problems. Access controls and data-protection requirements must be considered from the beginning.   
+
+**Blockchain analytics and financial investigations**. 
 Public blockchain data can help analysts follow asset movements, examine interactions with known services, and develop leads for fraud reviews, incident response, or anti-money laundering (AML) investigations.
+
 A careful workflow is to:
 1. Verify the network and transaction hash.
 2. Record visible facts such as status, block, addresses, and amounts.
 3. Map relevant transfers and contract interactions.
 4. Compare observations with reliable external information.
 5. Clearly separate confirmed facts from hypotheses.
-A key rule for responsible analysis: an address is not automatically a person, and a transfer does not prove intent. Labels and clustering methods may help generate leads, but attribution requires corroboration. Blockchain analytics supports evidence-based investigation; it does not replace due diligence or human judgment.
+   
+**A key rule for responsible analysis:** an address is not automatically a person, and a transfer does not prove intent. Labels and clustering methods may help generate leads, but attribution requires corroboration. Blockchain analytics supports evidence-based investigation; it does not replace due diligence or human judgment.
 The question to ask before using blockchain
-Before building a blockchain solution, ask: Do several parties need a shared record, and do they need to verify updates without relying entirely on one central operator? If the answer is no, a traditional database may be the more practical choice.
-Conclusion
+
+**Before building a blockchain solution, ask:** Do several parties need a shared record, and do they need to verify updates without relying entirely on one central operator? If the answer is no, a traditional database may be the more practical choice.
+
+---
+
+**Conclusion**
 Blockchain combines cryptography, shared records, validation rules, and ways for network participants to agree on updates. Blocks organize transactions, nodes verify activity, and consensus helps determine the accepted history. Its applications range from digital payments and smart contracts to supply-chain coordination and transaction analysis.
+
 The useful question is not simply “Can this be put on a blockchain?” It is “Would a shared, independently verifiable record solve a real problem better than a simpler alternative?” Understanding both the strengths and limitations of blockchain is what makes its use practical and responsible.
-References
+
+**References**
 See [`sources.md`](sources.md) for direct links to the sources used in this report.
