@@ -1,6 +1,6 @@
 # Blockchain, Explained: How It Works and Where It Matters
 
-##Internship Research Report
+## Internship Research Report
 Repository: Skillzeno-Internship-Tasks
 The main idea: Blockchain is more than cryptocurrency. It is a way for multiple participants to maintain and verify a shared record using common rules instead of relying entirely on one central record-keeper.
 --
