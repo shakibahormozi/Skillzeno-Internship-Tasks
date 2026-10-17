@@ -17,8 +17,10 @@ It is a way for multiple participants to maintain and verify a shared record usi
    
 ---
 
-1. Blockchain Fundamentals: A Shared Record, Not Magic
-Imagine a product moving from a manufacturer to a delivery company, a distributor, and finally a store. Each organization keeps its own spreadsheet. If the shipment date or quantity differs between records, the organizations need to work out which version to trust.
+# 1. Blockchain Fundamentals: A Shared Record, Not Magic  
+
+Imagine a product moving from a manufacturer to a delivery company, a distributor, and finally a store. Each organization keeps its own spreadsheet. If the shipment date or quantity differs between records, the organizations need to work out which version to trust.  
+
 A blockchain offers a different approach: participants follow shared rules to record and verify updates in a common ledger. Copies of the ledger are maintained by participating computers, and cryptographic techniques help make unauthorized changes detectable. Instead of asking only “Whose database should we trust?”, participants can also ask “Does this update follow the network's rules?”
 A blockchain typically combines five building blocks:
 - Distributed ledger: a shared record maintained by multiple participants.
