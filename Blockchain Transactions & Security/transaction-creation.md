@@ -67,7 +67,7 @@ Since one BTC equals 100,000,000 satoshis, the fee in this example is 50,000 sat
 
 Wallets also consider the transaction's virtual size and prevailing network fee rates when selecting an appropriate fee.
 
-## Step 4: Signing the Transaction
+**Step 4: Signing the Transaction**
 
 After constructing the transaction, the wallet produces the required cryptographic signatures using the appropriate private keys.
 
@@ -77,7 +77,7 @@ Depending on the output type, Bitcoin transactions may use different signature m
 
 Private keys are used to produce signatures and should never be shared when inspecting public blockchain transactions.
 
-Step 5: Serializing and Broadcasting
+**Step 5: Serializing and Broadcasting**
 
 The transaction is encoded into Bitcoin's serialized transaction format.
 
@@ -85,7 +85,7 @@ The wallet then broadcasts the signed transaction to connected Bitcoin nodes. No
 
 At this stage, a transaction can remain unconfirmed while waiting to be included in a block.
 
-Step 6: Network Validation and Block Inclusion
+**Step 6: Network Validation and Block Inclusion**
 
 Bitcoin nodes independently check transactions against applicable transaction and consensus rules. These checks include input availability, spending conditions, signatures, and transaction value constraints.
 
@@ -93,13 +93,13 @@ Miners may include valid transactions in blocks. Once a transaction is included 
 
 These steps describe the general transaction lifecycle. In the practical investigation below, I examined transactions already recorded on the public blockchain rather than creating and broadcasting a new transaction myself.
 
-4. Practical Investigation Using Mempool.space
+## 4. Practical Investigation Using Mempool.space
 
-4.1 Tools and Methodology
+**4.1 Tools and Methodology**
 
-Tool used: Mempool.space — Bitcoin Explorer
+Tool used: [Mempool.space](https://mempool.space/) — Bitcoin Explorer
 
-I followed a practical, transaction-by-transaction approach:
+**I followed a practical, transaction-by-transaction approach:**
 
 Opened individual transaction pages and examined the displayed input and output values.
 
