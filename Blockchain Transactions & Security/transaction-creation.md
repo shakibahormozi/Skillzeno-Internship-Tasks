@@ -101,49 +101,35 @@ Tool used: [Mempool.space](https://mempool.space/) — Bitcoin Explorer
 
 **I followed a practical, transaction-by-transaction approach:**
 
-Opened individual transaction pages and examined the displayed input and output values.
+1. Opened individual transaction pages and examined the displayed input and output values.
 
-Identified outputs sent to a particular address.
+2. Identified outputs sent to a particular address.
 
-Followed the relevant transaction IDs to determine whether those outputs were later spent.
+3. Followed the relevant transaction IDs to determine whether those outputs were later spent.
 
-Inspected address pages to examine confirmed balances, total received amounts, and UTXO counts.
+4. Inspected address pages to examine confirmed balances, total received amounts, and UTXO counts.
 
-Manually calculated transaction fees and compared the results with the explorer's displayed values.
+5. Manually calculated transaction fees and compared the results with the explorer's displayed values.
 
-Recorded the transaction relationships and distinguished observed facts from assumptions about address ownership.
+6. Recorded the transaction relationships and distinguished observed facts from assumptions about address ownership.
 
 The investigation covered five transaction IDs.
 
-4.2 Transaction 1 — Identifying an Initial Output
+**4.2 Transaction 1 — Identifying an Initial Output**
 
-Transaction ID: 6ed1b20abed8f5f48c5c3466e8afdc672c065cbb332948e51c69e112509f836f
+Transaction ID: [6ed1b20abed8f5f48c5c3466e8afdc672c065cbb332948e51c69e112509f836f](https://mempool.space/tx/6ed1b20abed8f5f48c5c3466e8afdc672c065cbb332948e51c69e112509f836f)
 
 The explorer displayed the following transaction details:
 
-Component
+## Bitcoin Transaction Analysis
 
-Amount
-
-Total input
-
-114.07649756 BTC
-
-Output to bc1q2w54p8aqj7y8anphrn76rq9g7z7qk89xaayjc4
-
-0.06059370 BTC
-
-Output to bc1qrfwdht448d0367jykecxjprglhz5u58kp76exl
-
-114.01529756 BTC
-
-Total outputs
-
-114.07589126 BTC
-
-Transaction fee
-
-0.00060630 BTC
+| Component | Amount |
+|:---|---:|
+| Total Input | 114.07649756 BTC |
+| Output to `bc1q2w54p8aqj7y8anphrn76rq9g7z7qk89xaayjc4` | 0.06059370 BTC |
+| Output to `bc1qrfwdht448d0367jykecxjprglhz5u58kp76exl` | 114.01529756 BTC |
+| **Total Outputs** | **114.07589126 BTC** |
+| **Transaction Fee** | **0.00060630 BTC** |
 
 Manual verification:
 
