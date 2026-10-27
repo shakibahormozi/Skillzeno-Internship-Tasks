@@ -139,45 +139,30 @@ The difference equals 60,630 satoshis, matching the fee displayed by the explore
 
 Observation: This transaction created an output of 0.06059370 BTC to the address bc1q2w54p8aqj7y8anphrn76rq9g7z7qk89xaayjc4. I later traced this output into another transaction.
 
-4.3 Transaction 2 — Identifying a Second Output to the Same Address
+**4.3 Transaction 2 — Identifying a Second Output to the Same Address**
 
-Transaction ID: c96f857ab4bc14e1d55352b7b504ffc26d97010368c5abb3f6b1bf10360547ff
+Transaction ID: [c96f857ab4bc14e1d55352b7b504ffc26d97010368c5abb3f6b1bf10360547ff](https://mempool.space/tx/c96f857ab4bc14e1d55352b7b504ffc26d97010368c5abb3f6b1bf10360547ff)
 
 This transaction had two inputs:
 
-Input
+### Bitcoin Transaction Inputs
 
-Amount
-
-Input 1
-
-0.00001000 BTC
-
-Input 2
-
-91.20529756 BTC
-
-Total inputs
-
-91.20530756 BTC
+| Input | Amount |
+|:---|---:|
+| Input 1 | 0.00001000 BTC |
+| Input 2 | 91.20529756 BTC |
+| **Total Inputs** | **91.20530756 BTC** |
 
 The transaction created an output of 91.20454646 BTC to the same address identified in Transaction 1.
 
-Component
 
-Amount
+### Bitcoin Transaction Summary
 
-Total inputs
-
-91.20530756 BTC
-
-Total outputs
-
-91.20454646 BTC
-
-Transaction fee
-
-0.00076110 BTC
+| Component | Amount |
+|:---|---:|
+| Total Inputs | 91.20530756 BTC |
+| Total Outputs | 91.20454646 BTC |
+| **Transaction Fee** | **0.00076110 BTC** |
 
 Manual verification:
 
@@ -187,15 +172,15 @@ The result equals 76,110 satoshis, matching the explorer's displayed fee.
 
 Observation: The address bc1q2w54p8aqj7y8anphrn76rq9g7z7qk89xaayjc4 received two independent outputs:
 
-0.06059370 BTC from Transaction 1.
+- 0.06059370 BTC from Transaction 1.
 
-91.20454646 BTC from Transaction 2.
+- 91.20454646 BTC from Transaction 2.
 
 Although both outputs were sent to the same address, they were created by separate transactions and represented distinct UTXOs.
 
-4.4 Transaction 3 — Spending Multiple UTXOs in One Transaction
+**4.4 Transaction 3 — Spending Multiple UTXOs in One Transaction**
 
-Transaction ID: 8047131e1df98252bc076a51fda9239d2fed56dba390fd0847f791dd59ade251
+Transaction ID: [8047131e1df98252bc076a51fda9239d2fed56dba390fd0847f791dd59ade251](https://mempool.space/tx/8047131e1df98252bc076a51fda9239d2fed56dba390fd0847f791dd59ade251)
 
 This transaction consumed the two outputs identified in the previous investigation steps.
 
