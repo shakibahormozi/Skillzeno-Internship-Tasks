@@ -1,6 +1,6 @@
-## How Bitcoin Transactions Are Created: A Practical Investigation
+# How Bitcoin Transactions Are Created: A Practical Investigation
 
-# 1. Introduction
+## 1. Introduction
 
 As part of my Blockchain and Web3 Technologies Internship, I studied how Bitcoin transactions are created, structured, and processed by the blockchain network.
 
@@ -10,7 +10,7 @@ During this exercise, I examined real Bitcoin transactions, identified their inp
 
 This project focuses on understanding the structure and lifecycle of Bitcoin transactions, with particular attention to the Unspent Transaction Output (UTXO) model.
 
-# 2. Learning Objectives
+## 2. Learning Objectives
 
 The main objectives of this practical exercise were to:
 
@@ -27,7 +27,7 @@ The main objectives of this practical exercise were to:
 - Understand the difference between transaction creation, network validation, and block confirmation.
 
 
-# 3. How a Bitcoin Transaction Is Created
+## 3. How a Bitcoin Transaction Is Created
 
 Bitcoin uses the UTXO model rather than a conventional account-balance model. A transaction spends existing outputs and creates new outputs.
 
@@ -67,7 +67,7 @@ Since one BTC equals 100,000,000 satoshis, the fee in this example is 50,000 sat
 
 Wallets also consider the transaction's virtual size and prevailing network fee rates when selecting an appropriate fee.
 
-# Step 4: Signing the Transaction
+## Step 4: Signing the Transaction
 
 After constructing the transaction, the wallet produces the required cryptographic signatures using the appropriate private keys.
 
