@@ -276,10 +276,11 @@ These observations indicated that both outputs were still unspent at the time of
 
 By following transaction IDs and their associated outputs, I reconstructed the following sequence:
 
-Transaction 1: 6ed1b20a...
-    |
-    |-- 0.06059370 BTC
-    v
+<CodeBlock language="markdown" editable>
+`Transaction 1: 6ed1b20a...
+    |  
+    |-- 0.06059370 BTC  
+    v  
 Address: bc1q2w54...
     ^
     |-- 91.20454646 BTC
