@@ -276,8 +276,9 @@ These observations indicated that both outputs were still unspent at the time of
 
 By following transaction IDs and their associated outputs, I reconstructed the following sequence:
 
-<CodeBlock language="markdown" editable>
-`Transaction 1: 6ed1b20a...
+
+```text
+Transaction 1: 6ed1b20a...
     |  
     |-- 0.06059370 BTC  
     v  
@@ -291,6 +292,7 @@ Transaction 3: 8047131e...
     Inputs:
       - 0.06059370 BTC
       - 91.20454646 BTC
+
 
     Outputs:
       - 0.06899147 BTC
@@ -313,7 +315,7 @@ Transaction 5: 4277ec30...
     Outputs:
       - 1.00000000 BTC
       - 90.12568400 BTC
-
+```
 This reconstruction illustrates how an output from an earlier transaction can become an input to a later transaction, producing new outputs that may themselves be spent in subsequent transactions.
 
 The explorer displayed the same timestamp for Transactions 2 and 3. This does not necessarily mean that the transactions were created or broadcast at exactly the same moment. Explorer timestamps generally reflect block-level timestamps, and multiple transactions in the same block can share a timestamp. The transaction references and output relationships provide the stronger evidence for the sequence described above.
