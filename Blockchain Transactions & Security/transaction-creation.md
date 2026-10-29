@@ -320,81 +320,43 @@ This reconstruction illustrates how an output from an earlier transaction can be
 
 The explorer displayed the same timestamp for Transactions 2 and 3. This does not necessarily mean that the transactions were created or broadcast at exactly the same moment. Explorer timestamps generally reflect block-level timestamps, and multiple transactions in the same block can share a timestamp. The transaction references and output relationships provide the stronger evidence for the sequence described above.
 
-6. Manual Transaction Fee Verification
+## 6. Manual Transaction Fee Verification
 
 I independently calculated the fees for all five transactions and compared the results with the values displayed by Mempool.space.
 
-Transaction
+### Bitcoin Transaction Overview
 
-Total inputs (BTC)
-
-Total outputs (BTC)
-
-Fee (satoshis)
-
-6ed1b20a...
-
-114.07649756
-
-114.07589126
-
-60,630
-
-c96f857a...
-
-91.20530756
-
-91.20454646
-
-76,110
-
-8047131e...
-
-91.26514016
-
-91.26451316
-
-62,700
-
-7db06a66...
-
-91.19552169
-
-91.19509869
-
-42,300
-
-4277ec30...
-
-91.12610722
-
-91.12568400
-
-42,322
+| Transaction | Total Inputs (BTC) | Total Outputs (BTC) | Fee (satoshis) |
+|:---|---:|---:|---:|
+| `6ed1b20a...` | 114.07649756 | 114.07589126 | 60,630 |
+| `c96f857a...` | 91.20530756 | 91.20454646 | 76,110 |
+| `8047131e...` | 91.26514016 | 91.26451316 | 62,700 |
+| `7db06a66...` | 91.19552169 | 91.19509869 | 42,300 |
+| `4277ec30...` | 91.12610722 | 91.12568400 | 42,322 |
 
 For every transaction, the difference between the total input value and the total output value matched the displayed fee.
 
 This exercise helped me understand that the transaction fee is the difference between inputs and outputs, rather than a conventional payment that necessarily appears as a separate output to a fee address.
 
-7. What I Learned
+## 7. What I Learned
 
 Through this practical investigation, I developed a better understanding of the following concepts:
 
 Transaction inputs and outputs: Inputs reference specific outputs from previous transactions, while outputs create new spending conditions for future transactions.
 
-UTXO lifecycle: An output remains unspent until it is referenced and consumed by a subsequent transaction. Once spent, it is no longer part of the unspent transaction output set.
+**UTXO lifecycle:** An output remains unspent until it is referenced and consumed by a subsequent transaction. Once spent, it is no longer part of the unspent transaction output set.
 
-Multiple inputs: A single transaction can consume several independent UTXOs at once.
+**Multiple inputs**: A single transaction can consume several independent UTXOs at once.
 
-Transaction fees: The fee can be calculated manually by subtracting total outputs from total inputs.
+**Transaction fees:** The fee can be calculated manually by subtracting total outputs from total inputs.
 
-Transaction tracing: Following transaction IDs and their referenced outputs makes it possible to reconstruct the movement of bitcoin between linked transactions.
+**Transaction tracing:** Following transaction IDs and their referenced outputs makes it possible to reconstruct the movement of bitcoin between linked transactions.
 
-Address inspection: Confirmed balances, total received values, and UTXO counts provide useful evidence about the state of an address at the time of inspection.
+**Address inspection:** Confirmed balances, total received values, and UTXO counts provide useful evidence about the state of an address at the time of inspection.
 
-Evidence-based analysis: Blockchain data reveals transaction relationships, but it does not automatically reveal the real-world identity of an address owner or the intent behind a transfer.
+**Evidence-based analysis:** Blockchain data reveals transaction relationships, but it does not automatically reveal the real-world identity of an address owner or the intent behind a transfer.
 
-8. Scope and Limitations
+## 8. Scope and Limitations
 
 This exercise involved analyzing existing Bitcoin transactions available through a public blockchain explorer. I did not create, sign, or broadcast a new transaction as part of this particular practical investigation.
 
@@ -404,7 +366,7 @@ Address ownership and the purpose of a transfer cannot be established from trans
 
 Address balances and unspent-output observations in this report reflect the information displayed during the investigation and may change as new transactions are confirmed.
 
-9. Conclusion
+## 9. Conclusion
 
 This practical investigation helped me connect the theoretical structure of Bitcoin transactions with real blockchain data.
 
@@ -412,12 +374,12 @@ By examining five transactions and tracing the associated UTXOs, I observed how 
 
 The exercise provided a practical foundation for further learning in blockchain transaction construction, hashing, digital signatures, transaction validation, and blockchain security.
 
-10. References
+## 10. References
 
-Mempool.space — Bitcoin Explorer
+[Mempool.space](https://mempool.space/) — Bitcoin Explorer
 
 Bitcoin Developer Guide — Transactions
 
 Bitcoin Developer Reference — Transaction Format
 
-Bitcoin.org — How Bitcoin Works
+[Bitcoin.org](https://bitcoin.org/en/) — How Bitcoin Works
