@@ -184,41 +184,25 @@ Transaction ID: [8047131e1df98252bc076a51fda9239d2fed56dba390fd0847f791dd59ade25
 
 This transaction consumed the two outputs identified in the previous investigation steps.
 
-Input
+### Bitcoin Transaction Inputs
 
-Amount
-
-Output originating from Transaction 1
-
-0.06059370 BTC
-
-Output originating from Transaction 2
-
-91.20454646 BTC
-
-Total inputs
-
-91.26514016 BTC
+| Input | Amount |
+|:---|---:|
+| Output originating from Transaction 1 | 0.06059370 BTC |
+| Output originating from Transaction 2 | 91.20454646 BTC |
+| **Total Inputs** | **91.26514016 BTC** |
 
 The transaction created two new outputs:
 
-Output
+### Bitcoin Transaction Outputs
 
-Amount
+| Output | Amount |
+|:---|---:|
+| Output to `bc1qrqtczuh8a8p9uwxjl0ca9h4wjlckqjgvc5a0yu` | 0.06899147 BTC |
+| Output to `bc1q6qf6xe4uthx0y8g7lglwv4244gxuy8mq7qyly2` | 91.19552169 BTC |
+| **Total Outputs** | **91.26451316 BTC** |
 
-Output to bc1qrqtczuh8a8p9uwxjl0ca9h4wjlckqjgvc5a0yu
-
-0.06899147 BTC
-
-Output to bc1q6qf6xe4uthx0y8g7lglwv4244gxuy8mq7qyly2
-
-91.19552169 BTC
-
-Total outputs
-
-91.26451316 BTC
-
-Manual verification:
+**Manual verification:**
 
 91.26514016 − 91.26451316 = 0.00062700 BTC
 
@@ -226,37 +210,23 @@ The calculated fee is 62,700 satoshis, matching the explorer's displayed fee.
 
 Key observation: This transaction demonstrated that multiple existing UTXOs can be consumed together as inputs to create new outputs. The two inputs were separate outputs, even though they had previously been sent to the same address.
 
-4.5 Transaction 4 — Following an Output Into a Subsequent Transaction
+## 4.5 Transaction 4 — Following an Output Into a Subsequent Transaction
 
 Transaction ID: 7db06a66e81f97df16cd294ddf30801217de09e06c1fa9f17a43d608e08aabf8
 
 This transaction spent the 91.19552169 BTC output created by Transaction 3.
 
-Component
+### Bitcoin Transaction Summary
 
-Amount
+| Component | Amount |
+|:---|---:|
+| Total Input | 91.19552169 BTC |
+| Output 1 | 0.06899147 BTC |
+| Output 2 | 91.12610722 BTC |
+| **Total Outputs** | **91.19509869 BTC** |
+| **Transaction Fee** | **0.00042300 BTC** |
 
-Total input
-
-91.19552169 BTC
-
-Output 1
-
-0.06899147 BTC
-
-Output 2
-
-91.12610722 BTC
-
-Total outputs
-
-91.19509869 BTC
-
-Transaction fee
-
-0.00042300 BTC
-
-Manual verification:
+**Manual verification:**
 
 91.19552169 − 91.19509869 = 0.00042300 BTC
 
@@ -264,43 +234,31 @@ The calculated fee equals 42,300 satoshis, matching the explorer.
 
 I also inspected the related address pages:
 
-bc1qs8s7gymf6canrthwa9whtx9a6mfjq9q93ugwfq displayed a confirmed balance of 0.06899147 BTC and one confirmed UTXO.
+[bc1qs8s7gymf6canrthwa9whtx9a6mfjq9q93ugwfq](https://mempool.space/address/bc1qs8s7gymf6canrthwa9whtx9a6mfjq9q93ugwfq) displayed a confirmed balance of 0.06899147 BTC and one confirmed UTXO.
 
-bc1q08j86yjjechk2d6svdz6s6qyav0spz5hz60z80 later displayed a zero confirmed balance and zero confirmed UTXOs after its received output was spent in Transaction 5.
+[bc1q08j86yjjechk2d6svdz6s6qyav0spz5hz60z80](https://mempool.space/address/bc1q08j86yjjechk2d6svdz6s6qyav0spz5hz60z80) later displayed a zero confirmed balance and zero confirmed UTXOs after its received output was spent in Transaction 5.
 
 These address observations helped me distinguish an output that remained unspent from one that had subsequently been consumed by another transaction.
 
-4.6 Transaction 5 — Following the Larger Output
+## 4.6 Transaction 5 — Following the Larger Output
 
-Transaction ID: 4277ec3046f2a134bcb46bca9b8b4a4c9f7b564c5919f54c7aaf653f1d3c1c4d
+Transaction ID: [4277ec3046f2a134bcb46bca9b8b4a4c9f7b564c5919f54c7aaf653f1d3c1c4d](https://mempool.space/tx/4277ec3046f2a134bcb46bca9b8b4a4c9f7b564c5919f54c7aaf653f1d3c1c4d)
 
 This transaction consumed the 91.12610722 BTC output from Transaction 4.
 
-Component
 
-Amount
+### Bitcoin Transaction Summary
 
-Total input
+| Component | Amount |
+|:---|---:|
+| Total Input | 91.12610722 BTC |
+| Output to `bc1qegqked6rtuqqy4va6lgp66c2nran78jtmugswp` | 1.00000000 BTC |
+| Output to `bc1qnct2d0kwsmca2eesxgk04c9ek756xd56trr2jv` | 90.12568400 BTC |
+| **Total Outputs** | **91.12568400 BTC** |
+| **Transaction Fee** | **0.00042322 BTC** |
 
-91.12610722 BTC
 
-Output to bc1qegqked6rtuqqy4va6lgp66c2nran78jtmugswp
-
-1.00000000 BTC
-
-Output to bc1qnct2d0kwsmca2eesxgk04c9ek756xd56trr2jv
-
-90.12568400 BTC
-
-Total outputs
-
-91.12568400 BTC
-
-Transaction fee
-
-0.00042322 BTC
-
-Manual verification:
+**Manual verification:**
 
 91.12610722 − 91.12568400 = 0.00042322 BTC
 
@@ -308,13 +266,13 @@ The calculated fee equals 42,322 satoshis, matching the displayed value.
 
 At the time I inspected the corresponding address pages, both addresses showed one confirmed UTXO and a confirmed balance equal to the amount received:
 
-Address receiving 1 BTC
+[Address receiving 1 BTC](https://mempool.space/address/bc1qegqked6rtuqqy4va6lgp66c2nran78jtmugswp)
 
-Address receiving 90.125684 BTC
+[Address receiving 90.125684 BTC](https://mempool.space/address/bc1qnct2d0kwsmca2eesxgk04c9ek756xd56trr2jv)
 
 These observations indicated that both outputs were still unspent at the time of inspection.
 
-5. Reconstructed Transaction Flow
+## 5. Reconstructed Transaction Flow
 
 By following transaction IDs and their associated outputs, I reconstructed the following sequence:
 
